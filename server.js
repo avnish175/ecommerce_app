@@ -30,9 +30,9 @@ app.use(express.json()); // we can also use body parser
 app.use(morgan("dev"));
 
 export const instance = new Razorpay({
-    key_id: process.env.RAZORPAY_API_KEY,
-    key_secret: process.env.RAZORPAY_APT_SECRET,
-  });
+  key_id: process.env.RAZORPAY_API_KEY,
+  key_secret: process.env.RAZORPAY_APT_SECRET,
+});
 
 //routes
 app.use("/api/v1/auth", authRoutes);
